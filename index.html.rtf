@@ -1,0 +1,293 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Portfolio: Expert Is In Program</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">\
+    <!-- Chosen Palette: Slate & Sky -->\
+    <!-- Application Structure Plan: The application is structured as a single-page narrative portfolio piece to guide a user (e.g., a hiring manager) through a compelling story of the project. It starts with a strong header (Title, Role), moves to a concise overview, and then presents the core details in an interactive two-column layout. This design separates the narrative (Achievements) from the specifics (Responsibilities), allowing users to explore details without losing the story's thread. A custom HTML/CSS diagram visualizes the program's growth, adding a memorable 'wow' factor. The structure concludes by summarizing key skills, reinforcing the main takeaways for the user. This non-linear but guided approach was chosen to be more engaging and scannable than a static document, catering to both quick reviews and in-depth exploration. -->\
+    <!-- Visualization & Content Choices: \
+    - Report Info: Project Responsibilities -> Goal: Organize & connect actions to skills. -> Viz/Method: Interactive Cards (HTML/CSS/JS). -> Interaction: On-click reveal of details. -> Justification: Breaks down a dense list into digestible, user-driven pieces. Prevents overwhelming the user upfront.\
+    - Report Info: Key Achievements (Program evolution from "Scientist Is In" to "Expert Is In") -> Goal: Visualize growth and impact. -> Viz/Method: Custom HTML/CSS Flow Diagram. -> Interaction: Subtle hover effects. -> Justification: Transforms a text-based achievement into a more powerful and memorable visual statement.\
+    - Report Info: Skills Demonstrated -> Goal: Reinforce key competencies. -> Viz/Method: Styled "Pill" or "Tag" elements (HTML/CSS). -> Interaction: On-click highlighting of related responsibilities. -> Justification: Modern UI pattern that makes skills easily scannable and links them directly to concrete actions, demonstrating proof of skill.\
+    - Report Info: Main Project Image -> Goal: Provide visual context. -> Viz/Method: Statically displayed, responsive image. -> Interaction: None. -> Justification: Acts as the primary visual anchor for the project, grounding the text in a real-world context.\
+    - Library/Method: All interactions are handled with vanilla JavaScript. All visuals are created with HTML and Tailwind CSS.\
+    -->\
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->\
+    <style>\
+        body \{\
+            font-family: 'Inter', sans-serif;\
+            background-color: #f8fafc; /* slate-50 */\
+        \}\
+        .tab-active \{\
+            background-color: #e0f2fe !important; /* sky-100 */\
+            border-color: #0284c7 !important; /* sky-600 */\
+            color: #0c4a6e !important; /* sky-900 */\
+        \}\
+        .skill-active \{\
+            background-color: #0ea5e9 !important; /* sky-500 */\
+            color: white !important;\
+            transform: scale(1.05);\
+        \}\
+        .content-panel \{\
+            transition: all 0.3s ease-in-out;\
+        \}\
+    </style>\
+</head>\
+<body class="text-slate-700">\
+\
+    <main class="container mx-auto p-4 sm:p-6 md:p-8 max-w-7xl">\
+\
+        <!-- Header Section -->\
+        <header class="text-center py-8 md:py-12 border-b-2 border-slate-200">\
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800">Expert Is In Public Engagement Program</h1>\
+            <p class="text-xl md:text-2xl text-sky-700 mt-3">Learning Experiences Project Manager, Smithsonian Institution</p>\
+        </header>\
+\
+        <!-- Overview Section -->\
+        <section id="overview" class="py-12 md:py-16">\
+            <div class="max-w-4xl mx-auto text-center">\
+                <h2 class="text-3xl font-semibold text-slate-800 mb-4">Project Overview</h2>\
+                <p class="text-lg leading-relaxed">\
+                    The "Expert Is In" program is a cornerstone public engagement initiative at the Smithsonian National Museum of Natural History, designed to bridge the gap between cutting-edge research and the curious public. This free program invites leading experts \'96 including scientists, researchers, and artists \'96 directly into the museum's exhibition halls and education centers to share their work on nature-based themes through dynamic, direct engagement with visitors.\
+                </p>\
+            </div>\
+        </section>\
+\
+        <!-- Core Interactive Section -->\
+        <section id="details" class="py-12 md:py-16 bg-white rounded-2xl shadow-sm border border-slate-200">\
+            <div class="container mx-auto px-6">\
+                <div class="text-center mb-12">\
+                     <h2 class="text-3xl font-semibold text-slate-800 mb-2">My Contribution & Impact</h2>\
+                     <p class="text-lg max-w-3xl mx-auto">This section details my role in the program's success. On the left, you can read about the program's achievements. On the right, explore my specific responsibilities by clicking on each category.</p>\
+                </div>\
+\
+                <div class="grid md:grid-cols-5 gap-12">\
+\
+                    <!-- Left Column: Achievements & Image -->\
+                    <div class="md:col-span-3">\
+                        <h3 class="text-2xl font-semibold text-slate-800 mb-4">Key Achievements & Program Evolution</h3>\
+                        <div class="space-y-4 text-base leading-loose prose prose-slate max-w-none">\
+                            <p>The "Expert Is In" program, originally launched as "Scientist Is In," began as a highly successful mobile station utilizing Discovery Carts in the Ocean Hall. Here, museum scientists and partners facilitated informal, interactive conversations, often incorporating collection objects, visuals, and specialized equipment.</p>\
+                            <p>Due to its profound success in enriching visitor experience and deepening public understanding of complex exhibition content, the program\'92s flexible framework was since been adapted and expanded to other prominent galleries, including the Hall of Human Origins. This expansion is a testament to the program's effectiveness in fostering direct, meaningful connections between experts and the public, making scientific and artistic knowledge accessible and engaging for all ages.</p>\
+                        </div>\
+                        <div class="mt-8">\
+                             <img src="https://storage.googleapis.com/gemini-prod-us-west1-assets/e6924b17e4fdb3d0859569ce45f782fe" alt="An entomology expert engaging visitors with microscopes and collection items at the Smithsonian National Museum of Natural History." class="rounded-xl shadow-lg w-full h-auto object-cover border-4 border-white">\
+                        </div>\
+                    </div>\
+\
+                    <!-- Right Column: Interactive Responsibilities -->\
+                    <div class="md:col-span-2">\
+                         <h3 class="text-2xl font-semibold text-slate-800 mb-4">Core Responsibilities & Projects</h3>\
+                        <div id="tabs-container" class="space-y-3">\
+                            <button data-tab="tab1" data-skill="skill1" class="w-full text-left p-4 rounded-lg border-2 border-slate-200 bg-slate-100 hover:bg-slate-200 hover:border-slate-300 transition duration-300 font-medium text-slate-700">Expert Is In Program</button>\
+                            <button data-tab="tab6" data-skill="skill6" class="w-full text-left p-4 rounded-lg border-2 border-slate-200 bg-slate-100 hover:bg-slate-200 hover:border-slate-300 transition duration-300 font-medium text-slate-700">Graduate Projects</button>\
+                            <button data-tab="tab7" data-skill="skill1" class="w-full text-left p-4 rounded-lg border-2 border-slate-200 bg-slate-100 hover:bg-slate-200 hover:border-slate-300 transition duration-300 font-medium text-slate-700">Art & Learning Programs</button>\
+                        </div>\
+                        <div id="content-container" class="mt-4 p-6 bg-sky-50 rounded-lg border border-sky-200 min-h-[150px]">\
+                            <div id="tab1" class="content-panel">\
+                                <h4 class="font-semibold text-sky-800 mb-2">Expert Is In Program Responsibilities</h4>\
+                                <ul class="list-disc list-inside space-y-1 text-base">\
+                                    <li>Conceptualizing and developing program formats, from intimate discussions to large-scale demonstrations, ensuring alignment with exhibition themes and the museum\'92s broader social impact and civic engagement strategies.</li>\
+                                    <li>Cultivating and sustaining national and community collaborations, fostering relationships with diverse experts and organizations to enrich program content and reach.</li>\
+                                    <li>Leading and facilitating collaborations among program managers, curators, scientists, artists, independent contractors, and educators to identify compelling content and innovative program formats.</li>\
+                                    <li>Developing robust program evaluation strategies and assessment tools based on audience feedback. Documenting findings to support continuous improvement and collaborative incorporation of insights.</li>\
+                                    <li>Developing comprehensive staffing plans, coordinating docent communication, training, and supervision to ensure seamless execution of public programs and festivals.</li>\
+                                </ul>\
+                            </div>\
+                            <div id="tab6" class="content-panel hidden">\
+                                <h4 class="font-semibold text-sky-800 mb-2">Graduate School Projects</h4>\
+                                <p>This section will detail key projects undertaken during my graduate studies, showcasing my academic research, analytical capabilities, and specialized knowledge in [mention your field of study, e.g., Art History, Museum Studies, Curatorial Practice].</p>\
+                                <ul class="list-disc list-inside space-y-1 text-base mt-2">\
+                                    <li>**Project A:** [Brief description of Project A and your role/contribution].</li>\
+                                    <li>**Project B:** [Brief description of Project B and your role/contribution].</li>\
+                                    <li>**Project C:** [Brief description of Project C and your role/contribution].</li>\
+                                </ul>\
+                                <p class="text-sm text-slate-500 mt-4">Please provide specific details for each graduate project to populate this section.</p>\
+                            </div>\
+                            <div id="tab7" class="content-panel hidden">\
+                                <h4 class="font-semibold text-sky-800 mb-2">Art & Learning Programs Projects</h4>\
+                                <p>Beyond the "Expert Is In" program, my experience includes developing and managing a variety of art-focused learning programs. These initiatives often involved [mention types of programs, e.g., workshops, guided tours, digital learning modules] and aimed to [mention goals, e.g., enhance visitor understanding of art, promote creative expression, foster interdisciplinary connections].</p>\
+                                <ul class="list-disc list-inside space-y-1 text-base mt-2">\
+                                    <li>**Program X:** [Brief description of Program X and your role/contribution].</li>\
+                                    <li>**Initiative Y:** [Brief description of Initiative Y and your role/contribution].</li>\
+                                </ul>\
+                                <p class="text-sm text-slate-500 mt-4">Please provide specific details for your art and learning programs to populate this section.</p>\
+                            </div>\
+                             <div id="tab-default" class="content-panel hidden">\
+                                <p class="text-slate-500">Select a responsibility or project category above to see the details.</p>\
+                            </div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Visual Impact Section -->\
+        <section class="py-12 md:py-16">\
+            <div class="text-center max-w-4xl mx-auto">\
+                <h2 class="text-3xl font-semibold text-slate-800 mb-2">Visualizing Program Growth</h2>\
+                 <p class="text-lg mb-12">To better illustrate the program's successful evolution, this diagram shows its journey from a targeted initiative to a widely adopted framework across the museum.</p>\
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">\
+                    <div class="text-center p-6 bg-white border-2 border-slate-200 rounded-xl shadow-sm transition hover:shadow-lg hover:scale-105">\
+                        <p class="text-sm text-slate-500">Phase 1</p>\
+                        <h4 class="text-xl font-semibold text-sky-700">Scientist Is In</h4>\
+                        <p class="mt-1">Mobile Carts in Ocean Hall</p>\
+                    </div>\
+                    <div class="w-1 h-8 md:w-16 md:h-1 bg-slate-300 mx-4"></div>\
+                    <div class="text-center p-6 bg-white border-2 border-slate-200 rounded-xl shadow-sm transition hover:shadow-lg hover:scale-105">\
+                        <p class="text-sm text-slate-500">Phase 2</p>\
+                        <h4 class="text-xl font-semibold text-sky-700">Expert Is In</h4>\
+                        <p class="mt-1">Framework Expansion</p>\
+                    </div>\
+                     <div class="w-1 h-8 md:w-16 md:h-1 bg-slate-300 mx-4"></div>\
+                     <div class="text-center p-6 bg-white border-2 border-sky-500 rounded-xl shadow-lg scale-105">\
+                        <p class="text-sm text-slate-500">Current Phase</p>\
+                        <h4 class="text-xl font-semibold text-sky-700">Multi-Gallery Adoption</h4>\
+                        <p class="mt-1">Including Hall of Human Origins</p>\
+                    </div>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <!-- Skills Section -->\
+        <section id="skills" class="py-12 md:py-16 bg-slate-800 text-white rounded-2xl">\
+            <div class="container mx-auto px-6 text-center">\
+                <h2 class="text-3xl font-semibold mb-2">Demonstrated Skills</h2>\
+                <p class="text-slate-300 mb-8 max-w-3xl mx-auto">Click on a skill to see the related responsibilities highlight above.</p>\
+                <div id="skills-container" class="flex flex-wrap justify-center gap-3">\
+                    <button data-skill="skill1" class="skill-button bg-sky-600 hover:bg-sky-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">Program Management</button>\
+                    <button data-skill="skill2" class="skill-button bg-slate-600 hover:bg-slate-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">Audience Engagement</button>\
+                    <button data-skill="skill3" class="skill-button bg-slate-600 hover:bg-slate-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">Cross-Disciplinary Collaboration</button>\
+                    <button data-skill="skill4" class="skill-button bg-slate-600 hover:bg-slate-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">Evaluation & Assessment</button>\
+                    <button data-skill="skill5" class="skill-button bg-slate-600 hover:bg-slate-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">Content Curation</button>\
+                    <button data-skill="skill6" class="skill-button bg-slate-600 hover:bg-slate-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">Research & Analysis</button>\
+                </div>\
+            </div>\
+        </section>\
+    </main>\
+<script>\
+document.addEventListener('DOMContentLoaded', function () \{\
+    const tabsContainer = document.getElementById('tabs-container');\
+    const contentContainer = document.getElementById('content-container');\
+    const skillButtons = document.querySelectorAll('.skill-button');\
+    const responsibilityTabs = tabsContainer.querySelectorAll('button');\
+\
+    let activeTab = null;\
+\
+    function showContent(tabId) \{\
+        // Hide all content panels\
+        contentContainer.querySelectorAll('.content-panel').forEach(panel => \{\
+            panel.classList.add('hidden');\
+        \});\
+\
+        // Show the selected content panel\
+        const selectedPanel = document.getElementById(tabId);\
+        if (selectedPanel) \{\
+            selectedPanel.classList.remove('hidden');\
+        \}\
+    \}\
+\
+    function setActiveTab(tabButton) \{\
+        // Remove active class from all tabs\
+        responsibilityTabs.forEach(btn => btn.classList.remove('tab-active'));\
+\
+        // Add active class to the selected tab\
+        if (tabButton) \{\
+            tabButton.classList.add('tab-active');\
+            activeTab = tabButton;\
+        \} else \{\
+            activeTab = null;\
+        \}\
+    \}\
+    \
+    function resetSkillHighlights() \{\
+        skillButtons.forEach(btn => \{\
+             btn.classList.remove('skill-active');\
+             btn.classList.replace('bg-sky-500', 'bg-slate-600');\
+             btn.classList.replace('hover:bg-sky-400', 'hover:bg-slate-500');\
+        \});\
+    \}\
+\
+    // Initial state\
+    showContent('tab1');\
+    setActiveTab(tabsContainer.querySelector('[data-tab="tab1"]'));\
+    \
+    tabsContainer.addEventListener('click', (e) => \{\
+        const tabButton = e.target.closest('button');\
+        if (!tabButton) return;\
+\
+        const tabId = tabButton.dataset.tab;\
+        showContent(tabId);\
+        setActiveTab(tabButton);\
+        resetSkillHighlights();\
+    \});\
+\
+    document.getElementById('skills-container').addEventListener('click', (e) => \{\
+        const skillButton = e.target.closest('button');\
+        if (!skillButton) return;\
+        \
+        const targetSkill = skillButton.dataset.skill;\
+\
+        // Reset other skill buttons\
+        skillButtons.forEach(btn => \{\
+            if(btn !== skillButton) \{\
+                btn.classList.remove('skill-active');\
+                btn.classList.replace('bg-sky-500','bg-slate-600');\
+                btn.classList.replace('hover:bg-sky-400','hover:bg-slate-500');\
+            \}\
+        \});\
+        \
+        // Toggle active skill button\
+        skillButton.classList.toggle('skill-active');\
+        if(skillButton.classList.contains('skill-active')) \{\
+            skillButton.classList.replace('bg-slate-600','bg-sky-500');\
+            skillButton.classList.replace('hover:bg-slate-500','hover:bg-sky-400');\
+        \} else \{\
+            skillButton.classList.replace('bg-sky-500','bg-slate-600');\
+            skillButton.classList.replace('hover:bg-sky-400','hover:bg-slate-500');\
+        \}\
+\
+        // Highlight corresponding responsibility tabs\
+        let firstMatch = null;\
+        responsibilityTabs.forEach(tab => \{\
+            if (tab.dataset.skill === targetSkill && skillButton.classList.contains('skill-active')) \{\
+                tab.classList.add('tab-active');\
+                if(!firstMatch) firstMatch = tab;\
+            \} else \{\
+                // Keep the active tab highlighted if it's not part of the skill group\
+                if (activeTab !== tab) \{\
+                   tab.classList.remove('tab-active');\
+                \}\
+            \}\
+        \});\
+        \
+        // Show the content for the first matching responsibility\
+        if(firstMatch && skillButton.classList.contains('skill-active')) \{\
+            showContent(firstMatch.dataset.tab);\
+            setActiveTab(firstMatch);\
+        \} else if (!skillButton.classList.contains('skill-active')) \{\
+            // If skill is deselected, revert to showing the default or last active tab\
+            if(activeTab) \{\
+                 showContent(activeTab.dataset.tab);\
+                 setActiveTab(activeTab);\
+            \} else \{\
+                showContent('tab-default');\
+                setActiveTab(null);\
+            \}\
+        \}\
+    \});\
+\});\
+</script>\
+</body>\
+</html>\
+}
